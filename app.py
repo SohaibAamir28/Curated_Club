@@ -64,9 +64,9 @@ def save_transcript(transcript_data, txt_file):
     with open(os.path.join(transcript_path, txt_file),"w") as f:
         f.write(transcript_data)
 
-st.title("Whisper in combination with GPT-3")
-st.info('✨ Supports all popular audio formats - WAV, MP3, MP4, OGG, WMA, AAC, FLAC, FLV 😉')
-st.text("First upload your audio file and then select the model type. \nThen click on the button to transcribe and classify the sentiment of the text in the audio.")
+st.title("Curated Club")
+st.info('✨Welcome to Curated Club 😉')
+st.text("A subscription-based service that uses a personalized algorithm, ChatGPT API, and customer feedback to curate monthly deliveries of products tailored to the customer's individual interests and preferences.")
 uploaded_file = st.file_uploader("Upload audio file", type=["wav","mp3","ogg","wma","aac","flac","mp4","flv"])
 
 audio_file = None
